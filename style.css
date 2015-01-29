@@ -1,0 +1,8 @@
+header, #main, #cubos, footer{
+	border: solid;
+}
+
+/*MOBILE FIRST*/
+body{
+	width: 90%;
+}

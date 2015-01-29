@@ -1,0 +1,59 @@
+header, #main, #cubos, footer, #central{
+	border-bottom: solid;
+}
+
+/*--------------------------------------------
+----------------------------------------------
+----------------MOBILE FIRST------------------
+----------------------------------------------
+------------maquetación principal-----------*/
+
+#main{
+	display: flex;
+	flex-flow: column;
+}
+
+#main > *{
+	/*margin: auto; para centrar*/
+}
+
+#cubos{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/*header*/
+header{
+	text-align: center;
+}
+
+#cubos section{
+	width: 200px;
+	padding: 10px;
+	background: green;
+	border-radius: 40%;
+	border: solid;
+	margin: auto;
+
+}
+
+/*Nav*/
+nav{
+	height: 0px; /*ocultar el menú en la versión móvil*/
+	visibility: hidden; 
+	border: none;
+}
+
+ul{
+	list-style: none;
+}
+
+li{
+	display: inline-block;
+}
+
+/*footer*/
+footer{
+	text-align: center;
+}
+/**/
