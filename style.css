@@ -1,0 +1,63 @@
+
+	body, html{
+		height: 100%;
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	nav, aside, section, header, footer, article{
+		border: solid;
+		margin: 5px;
+	}
+
+    p{
+        margin: auto;
+    }
+
+	#main{
+		display: flex;
+		flex-flow: row;
+		height: 80%;
+	}
+
+	#main nav{
+		flex: 1 6 20%;
+		order: 1;
+	}
+
+	#main aside{
+		flex: 1 6 20%;
+		order: 3;
+	}
+
+	#main section{
+		display: flex;
+		flex-flow: column;
+		flex: 3 1 60%;
+		order: 2;
+	}
+
+	section header{		
+		flex: 1 6 20%;
+		order: 1;
+	}
+
+	section article{		
+		flex: 3 1 60%;
+		order: 2;
+	}
+
+	section footer{		
+		flex: 1 6 20%;
+		order: 3;
+	}
+
+	header, footer {
+		display: block;
+		min-height: 10%;
+	}
+
+	p{
+		padding: 20px;
+	}
