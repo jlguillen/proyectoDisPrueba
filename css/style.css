@@ -48,23 +48,22 @@ ul{
 	list-style: none;
 }
 
-li{
-	display: inline-block;
+li{	
+	display: block;
+	width: 100%;
+	margin-left: -20px;
+	padding: 20px 0px 20px 0px;
+	margin-top: 10px;
 }
 
-.bt-menu {
-  position: relative;
-  padding-left: 1.25em;
+li a{
+
+	padding: 20px 155px 20px 0px;
+	background-color: #343434;
 }
-.bt-menu:before {
-  content: "";
-  position: absolute;
-  top: 0.25em;
-  left: 0;
-  width: 1em;
-  height: 0.125em;
-  border-top: 0.375em double #000;
-  border-bottom: 0.125em solid #000;
+
+.boton{
+	height: 10px;
 }
 
 /*footer*/
@@ -72,3 +71,23 @@ footer{
 	text-align: center;
 }
 /**/
+
+
+
+.btn {
+	display: inline;
+	height: 36px; 
+	width: 36px;  
+	cursor: pointer;
+}
+
+#lines:before { 
+	border-bottom: 17px double black;
+	border-top: 6px solid black;    
+	content:"";
+	height: 5px; 
+	position: absolute; 
+	right:3px;  
+	top: 4px; 
+	width:30px; 
+}
