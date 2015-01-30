@@ -3,24 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>ENCADECO</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
-	<script src="js/modernizr.custom.04200.js"></script> 
+	<script src="js/modernizr.custom.04200.js"></script>
+	<link rel="stylesheet" href="libs/slidebars.css">
 </head>
 <body>
-	<div id="main">
+	<div id="sb-site" id="main">
+		<span class="sb-toggle-right bt-menu"></span>
 		<header>
 			<hgroup>
 				<h1>ENCADECO</h1>
 			</hgroup>
-			<nav>
-				<ul>
-					<li>opcion</li>
-					<li>opcion</li>
-					<li>opcion</li>
-				</ul>
-			</nav>
-		</header>
+		</header>		
 
 		<div id="central">	
 
@@ -56,5 +52,26 @@
 			<p>pie de página, botones sociales, tal</p>
 		</footer>
 	</div>
+	<div class="sb-slidebar sb-right sb-style-overlay">
+			<ul>
+				<li>opcion</li>
+				<li>opcion</li>
+				<li>opcion</li>
+			</ul>
+	</div>
+
+		<!-- jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	
+	<!-- Slidebars -->
+	<script src="libs/slidebars.js"></script>
+	<script>
+		(function($) {
+			$(document).ready(function() {
+				$.slidebars();
+			});
+		}) (jQuery);
+	</script>
 	
 </body>
+</html>
