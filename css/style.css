@@ -70,6 +70,16 @@ li a{
 footer{
 	text-align: center;
 }
+
+/*Padding texto, ##############temporal############*/
+
+#central, #mapa{
+	padding-left:1em;
+}
+iframe{
+	padding-top: 1em;
+}
+
 /**/
 
 
