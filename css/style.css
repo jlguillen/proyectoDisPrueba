@@ -8,7 +8,7 @@ header, #main, #cubos, footer, #central{
 ----------------------------------------------
 ------------maquetación principal-----------*/
 
-#main{
+#main, main{
 	display: flex;
 	flex-flow: column;
 }
@@ -40,7 +40,7 @@ header{
 /*Nav*/
 nav{
 	height: 0px; /*ocultar el menú en la versión móvil*/
-	visibility: hidden; 
+	visibility: hidden;
 	border: none;
 }
 
@@ -48,7 +48,7 @@ ul{
 	list-style: none;
 }
 
-li{	
+li{
 	display: block;
 	width: 100%;
 	margin-left: -20px;
@@ -76,18 +76,18 @@ footer{
 
 .btn {
 	display: inline;
-	height: 36px; 
-	width: 36px;  
+	height: 36px;
+	width: 36px;
 	cursor: pointer;
 }
 
-#lines:before { 
+#lines:before {
 	border-bottom: 17px double black;
-	border-top: 6px solid black;    
+	border-top: 6px solid black;
 	content:"";
-	height: 5px; 
-	position: absolute; 
-	right:3px;  
-	top: 4px; 
-	width:30px; 
+	height: 5px;
+	position: absolute;
+	right:3px;
+	top: 4px;
+	width:30px;
 }
