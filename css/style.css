@@ -47,8 +47,8 @@ nav{
 ul{
 	list-style: none;
 }
-
-li{
+/*Añadida la clase para no alteral el resto de li*/
+.sb-slidebar li{
 	display: block;
 	width: 100%;
 	margin-left: -20px;
@@ -56,7 +56,7 @@ li{
 	margin-top: 10px;
 }
 
-li a{
+.sb-slidebar li a{
 
 	padding: 20px 155px 20px 0px;
 	background-color: #343434;
