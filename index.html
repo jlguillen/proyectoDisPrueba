@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="libs/slidebars.css">
 </head>
 <body>
-	<div class="sb-slidebar sb-right sb-style-overlay">
+	<div id="menu" class="sb-slidebar sb-right sb-style-overlay">
 		<ul>
 			<li><a href="">opcion</a></li>
 			<li><a href="">opcion</a></li>
@@ -88,8 +88,25 @@
 		(function($) {
 			$(document).ready(function() {
 				$.slidebars();
+				verificarWith();
 			});
 		}) (jQuery);
+
+
+
+		$(window).resize(function(){
+				console.log("++++++++++++++++++++");
+				verificarWith();
+		});
+
+		function verificarWith(){
+			if ($(window).width() <= 800) {
+				$('#menu').
+
+						//cambio de clase
+
+			}
+		}
 	</script>
 
 </body>
