@@ -25,9 +25,10 @@
 	<main id="sb-site">
 		<header>
 			<div id="lines" class="sb-toggle-right btn"></div>
-			<hgroup>
-				<h1>ENCADECO</h1>
-			</hgroup>
+			<!--<hgroup>
+				<h1>ENCADECO</h1>-->
+				<img src="media/logo.svg">
+			<!--</hgroup>-->
 		</header>
 		<div id="central">
 
@@ -100,11 +101,11 @@
 		});
 
 		function verificarWith(){
+			//cambio de clase
 			if ($(window).width() <= 800) {
-				$('#menu').
-
-						//cambio de clase
-
+				$('#menu').attr('class','sb-slidebar sb-right sb-style-overlay');
+			}else{
+				$('#menu').attr('class','pc-screen-menu');
 			}
 		}
 	</script>
