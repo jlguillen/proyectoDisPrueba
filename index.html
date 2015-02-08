@@ -10,26 +10,26 @@
 	<link rel="stylesheet" href="libs/slidebars.css">
 </head>
 <body>
-	<div id="menu" class="sb-slidebar sb-right sb-style-overlay">
-		<ul>
-			<li><a href="">opcion</a></li>
-			<li><a href="">opcion</a></li>
-			<li><a href="">opcion</a></li>
-			<li><a href="">opcion</a></li>
-			<li><a href="">opcion</a></li>
-		</ul>
-	</div>
-
-
-
 	<main id="sb-site">
 		<header>
+			<div class="logo">
+				<a href="#" title="ENCADECO : Modernice su negocio">encadeco</a>				
+			</div>
+
+			<!--<img src="media/logo.svg" alt="logo-ENCADECO">-->
 			<div id="lines" class="sb-toggle-right btn"></div>
-			<!--<hgroup>
-				<h1>ENCADECO</h1>
-			</hgroup>-->
-			<img src="media/logo.svg" alt="logo-ENCADECO">
+
+			<div id="menu" class="sb-slidebar sb-right sb-style-overlay">
+				<ul class="navigation">
+					<li><a href="">opcion</a></li>
+					<li><a href="">opcion</a></li>
+					<li><a href="">opcion</a></li>
+					<li><a href="">opcion</a></li>
+					<li><a href="">opcion</a></li>
+				</ul>
+			</div>
 		</header>
+
 		<div id="central">
 
 			<section>
@@ -96,13 +96,13 @@
 
 
 		$(window).resize(function(){
-				console.log("++++++++++++++++++++");
+				//console.log("++++++++++++++++++++");
 				verificarWith();
 		});
 
 		function verificarWith(){
 			//cambio de clase
-			if ($(window).width() <= 800) {
+			if ($(window).width() <= 799) {
 				$('#menu').attr('class','sb-slidebar sb-right sb-style-overlay');
 			}else{
 				$('#menu').attr('class','pc-screen-menu');

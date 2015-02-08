@@ -7,15 +7,13 @@ header, #main, #cubos, footer, #central{
 ----------------MOBILE FIRST------------------
 ----------------------------------------------
 ------------maquetación principal-----------*/
-
-#main, main{
-	display: flex;
-	flex-flow: column;
+main{
 }
 
 #main > *{
 	/*margin: auto; para centrar*/
 }
+
 
 #cubos{
 	display: flex;
@@ -24,7 +22,22 @@ header, #main, #cubos, footer, #central{
 
 /*header*/
 header{
-	text-align: center;
+	height: 40px;
+	margin: 10px 0px 0px 10px;
+}
+
+header .logo{
+	width: 250px;
+	height: 30px;
+	background: url("../media/logo.svg") no-repeat scroll 0% 0% / 100% 100%;	
+	float: left;
+}
+
+header .logo a{
+	display: block;
+	height: 30px;
+	text-indent: -34em;
+	overflow: hidden;
 }
 
 #cubos section{
@@ -34,14 +47,28 @@ header{
 	border-radius: 40%;
 	border: solid;
 	margin: auto;
-
 }
 
 /*Nav*/
 
-ul{
+/*NAV para la version PC*/
+.pc-screen-menu ul{
 	list-style: none;
+	margin: 0;
+	display: flex;
+	flex-flow: row;
 }
+
+.pc-screen-menu ul a {
+	text-decoration: none;
+	display: block;
+	padding: 0.5em 1em 0.5em 1em;
+}
+
+.pc-screen-menu ul a:hover {
+	background: #00b7f5;
+}
+
 /*Añadida la clase para no alteral el resto de li*/
 .sb-slidebar li{
 	display: block;
@@ -52,13 +79,8 @@ ul{
 }
 
 .sb-slidebar li a{
-
 	padding: 20px 155px 20px 0px;
 	background-color: #343434;
-}
-
-.boton{
-	height: 10px;
 }
 
 
@@ -67,6 +89,7 @@ ul{
 #central, #mapa{
 	padding-left:1em;
 }
+
 iframe{
 	padding-top: 1em;
 }
@@ -214,6 +237,9 @@ footer{
     background-color: #4785cb;
 }
 
+
+
+/*Media: MAS de 800px de ancho*/
 @media (min-width: 800px) {
 	.soc li a {
 		width: 50px;
@@ -234,3 +260,5 @@ footer{
 	}
 	
 }
+/*FIN MEDIA 800px*/
+
