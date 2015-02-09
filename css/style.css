@@ -1,5 +1,5 @@
 header, #main, #cubos, footer, #central{
-	border-bottom: solid;
+    border-bottom: solid;
 }
 
 /*--------------------------------------------
@@ -8,6 +8,7 @@ header, #main, #cubos, footer, #central{
 ----------------------------------------------
 ------------maquetación principal-----------*/
 main{
+    margin: 0;
 }
 
 #main > *{
@@ -23,7 +24,7 @@ main{
 /*header*/
 header{
 	height: 40px;
-	margin: 10px 0px 0px 10px;
+	margin: 10px 10px 10px 10px;
 }
 
 header .logo{
@@ -52,7 +53,7 @@ header .logo a{
 /*Nav*/
 
 /*NAV para la version PC*/
-.pc-screen-menu ul{
+.pc-screen-menu ul{    
 	list-style: none;
 	margin: 0;
 	display: flex;
@@ -87,7 +88,7 @@ header .logo a{
 /*Padding texto, ##############temporal############*/
 
 #central, #mapa{
-	padding-left:1em;
+	padding-left:0 1em;
 }
 
 iframe{
@@ -252,7 +253,7 @@ footer{
 	}
 
 	.btn {
-		display: none;
+		display: hidden;
 	}
 
 	#lines:before {
@@ -262,116 +263,58 @@ footer{
 }
 /*FIN MEDIA 800px*/
 
-@import url(http://fonts.googleapis.com/css?family=Varela+Round);
-
-/*html, body { background: #333 url("http://codepen.io/images/classy_fabric.png"); }*/
-
-.slides {
-		padding: 0;
-		width: 609px;
-		height: 420px;
-		display: block;
-		margin: 0 auto;
-		position: relative;
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
 }
 
-.slides * {
-		user-select: none;
-		-ms-user-select: none;
-		-moz-user-select: none;
-		-khtml-user-select: none;
-		-webkit-user-select: none;
-		-webkit-touch-callout: none;
+div#captioned-gallery {
+    width: 70%; overflow: hidden;
 }
 
-.slides input { display: none; }
+figure { margin: 0; }
 
-.slide-container { display: block; }
+figure.slider {
 
-.slide {
-		top: 0;
-		opacity: 0;
-		width: 609px;
-		height: 420px;
-		display: block;
-		position: absolute;
+position: relative; width: 500%;
 
-		transform: scale(0);
+font-size: 0; animation: 10s slidy infinite; 
 
-		transition: all .7s ease-in-out;
 }
 
-.slide img {
-		width: 100%;
-		height: 100%;
+figure.slider figure { 
+
+width: 20%; height: auto;
+
+display: inline-block;
+
+position: inherit; 
+
 }
 
-.nav label {
-		width: 50px;
-		height: 100%;
-		display: none;
-		position: absolute;
+figure.slider img { width: 100%; height: auto; }
 
-		opacity: 0;
-		z-index: 9;
-		cursor: pointer;
+figure.slider figure figcaption {
 
-		transition: opacity .2s;
+position: absolute; bottom: 0;
 
-		color: #FFF;
-		font-size: 2em;
-		text-align: center;
-		line-height: 380px;
-		font-family: "Varela Round", sans-serif;
-		background-color: rgba(255, 255, 255, .3);
-		text-shadow: 0px 0px 15px rgb(119, 119, 119);
+background: rgba(0,0,0,0.3);
+
+color: #fff; width: 100%;
+
+font-size: 2rem; padding: .6rem;
+
 }
 
-.slide:hover + .nav label { opacity: 0.5; }
+@media screen and (max-width: 500px) { 
 
-.nav label:hover { opacity: 1; }
+figure.slider figure figcaption { font-size: 1.2rem; }
 
-.nav .next { right: 0; }
-
-input:checked + .slide-container  .slide {
-		opacity: 1;
-
-		transform: scale(1);
-
-		transition: opacity 1s ease-in-out;
 }
-
-input:checked + .slide-container .nav label { display: block; }
-
-.nav-dots {
-	width: 100%;
-	bottom: 9px;
-	height: 11px;
-	display: block;
-	position: absolute;
-	text-align: center;
-}
-
-.nav-dots .nav-dot {
-	top: -5px;
-	width: 11px;
-	height: 11px;
-	margin: 0 4px;
-	position: relative;
-	border-radius: 100%;
-	display: inline-block;
-	background-color: rgba(0, 0, 0, 0.6);
-}
-
-.nav-dots .nav-dot:hover {
-	cursor: pointer;
-	background-color: rgba(0, 0, 0, 0.8);
-}
-
-input#img-1:checked ~ .nav-dots label#img-dot-1,
-input#img-2:checked ~ .nav-dots label#img-dot-2,
-input#img-3:checked ~ .nav-dots label#img-dot-3,
-input#img-4:checked ~ .nav-dots label#img-dot-4,
-input#img-5:checked ~ .nav-dots label#img-dot-5,
-input#img-6:checked ~ .nav-dots label#img-dot-6 {
-	background: rgba(0, 0, 0, 0.8);
