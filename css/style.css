@@ -52,36 +52,23 @@ header .logo a{
 
 /*Nav*/
 
-/*NAV para la version PC*/
-.pc-screen-menu ul{    
-	list-style: none;
-	margin: 0;
-	display: flex;
-	flex-flow: row;
-}
 
-.pc-screen-menu ul a {
-	text-decoration: none;
-	display: block;
-	padding: 0.5em 1em 0.5em 1em;
-}
-
-.pc-screen-menu ul a:hover {
-	background: #00b7f5;
-}
 
 /*Añadida la clase para no alteral el resto de li*/
+.sb-slidebar{
+	background-color: #222222;
+}
 .sb-slidebar li{
 	display: block;
 	width: 100%;
-	margin-left: -20px;
 	padding: 20px 0px 20px 0px;
-	margin-top: 10px;
 }
 
 .sb-slidebar li a{
 	padding: 20px 155px 20px 0px;
-	background-color: #343434;
+	background-color: #222222;
+	margin: 0;
+	
 }
 
 
@@ -96,8 +83,6 @@ iframe{
 }
 
 /**/
-
-
 
 .btn {
 	display: inline;
@@ -175,14 +160,14 @@ footer{
     color: #ffffff;
     background-color: none;
 
-		width: 30px;
-		height: 30px;
-		line-height: 30px;
-		font-size: 17px;
-		margin-right: 10px;
-		-webkit-border-radius: 10px;
-		-moz-border-radius: 10px;
-		border-radius: 10px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 17px;
+	margin-right: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 }
 .soc a:hover { z-index: 2; }
 
@@ -239,29 +224,17 @@ footer{
 }
 
 
-
-/*Media: MAS de 800px de ancho*/
-@media (min-width: 800px) {
-	.soc li a {
-		width: 50px;
-		height: 50px;
-		line-height: 50px;
-		font-size: 27px;
-		-webkit-border-radius: 18px;
-		-moz-border-radius: 18px;
-		border-radius: 18px;
-	}
-
-	.btn {
-		display: hidden;
-	}
-
-	#lines:before {
-		display: none;
-	}
-
+@-webkit-keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
 }
-/*FIN MEDIA 800px*/
 
 @keyframes slidy {
     0% { left: 0%; }
@@ -276,45 +249,110 @@ footer{
 }
 
 div#captioned-gallery {
-    width: 70%; overflow: hidden;
+    width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
-figure { margin: 0; }
+figure {
+	margin: 0;
+}
 
 figure.slider {
-
-position: relative; width: 500%;
-
-font-size: 0; animation: 10s slidy infinite; 
+	position: relative;
+	width: 500%;
+	font-size: 0;
+	animation: 15s slidy infinite; 
+	-webkit-animation: 15s slidy infinite;
 
 }
 
 figure.slider figure { 
-
-width: 20%; height: auto;
-
-display: inline-block;
-
-position: inherit; 
-
+	width: 20%;
+	height: auto;
+	display: inline-block;
+	position: relative; 
 }
 
-figure.slider img { width: 100%; height: auto; }
+figure.slider img {
+	width: 100%;
+	height: auto;
+}
 
 figure.slider figure figcaption {
-
-position: absolute; bottom: 0;
-
-background: rgba(0,0,0,0.3);
-
-color: #fff; width: 100%;
-
-font-size: 2rem; padding: .6rem;
-
+	position: absolute;
+	bottom: 0;
+	background: rgba(0,0,0,0.3);
+	color: #fff; width: 100%;
+	font-size: 2rem; padding: .6rem;
 }
 
 @media screen and (max-width: 500px) { 
 
-figure.slider figure figcaption { font-size: 1.2rem; }
+	figure.slider figure figcaption {
+		font-size: 1.2rem;
+	}
 
+}
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++DISEÑO ORIENTADO A PANTALLAS NO MOBILE++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*Media: MAS de 800px de ancho*/
+@media (min-width: 800px) {
+	.soc li a {
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		font-size: 27px;
+		-webkit-border-radius: 18px;
+		-moz-border-radius: 18px;
+		border-radius: 18px;
+	}
+
+	.btn {
+		display: none;
+	}
+
+	#lines:before {
+		display: none;
+	}
+
+	div#captioned-gallery{
+		width: 65%;
+	}
+
+	figure.slider figure figcaption {
+		position: absolute;
+		bottom: 0;
+		background: rgba(0,0,0,0.3);
+		color: #fff; width: 100%;
+		font-size: 2rem; padding: .6rem;
+	}
+
+}
+/*FIN MEDIA 800px*/
+
+/*NAV para la version PC*/
+.pc-screen-menu ul{    
+	list-style: none;
+	margin: 0;
+	display: flex;
+	flex-flow: row;
+}
+
+.pc-screen-menu ul a {
+	text-decoration: none;
+	display: block;
+	padding: 0.5em 1em 0.5em 1em;
+}
+
+.pc-screen-menu ul a:hover {
+	background: #00b7f5;
 }
