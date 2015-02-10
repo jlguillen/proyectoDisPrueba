@@ -41,13 +41,37 @@ header .logo a{
 	overflow: hidden;
 }
 
+/*+++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++ESTILO PARA CUBOS+++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
 #cubos section{
+	height: 200px;
 	width: 200px;
-	padding: 10px;
-	background: green;
-	border-radius: 40%;
-	border: solid;
-	margin: auto;
+	margin: 10px auto;
+	padding: 10px;	
+	border-radius: 10%;
+}
+
+#cubo1{
+	background: url("../media/dudas.jpg") no-repeat scroll 0% 0% / 100% 100%;
+}
+
+#cubo2{
+	background: url("../media/reloj.jpg") no-repeat scroll 0% 0% / 100% 100%;
+}
+
+#cubo3{
+	background: url("../media/prismaticos.jpg") no-repeat scroll 0% 0% / 100% 100%;
+}
+
+#cubo4{
+	background: url("../media/fuerte.jpg") no-repeat scroll 0% 0% / 100% 100%;
+}
+
+#cubos section > *{
 }
 
 /*Nav*/
@@ -296,6 +320,7 @@ figure.slider figure figcaption {
 }
 
 
+
 /*++++++++++++++++++++++++++++++++++++++++++++++++
 ++++++++++++++++++++++++++++++++++++++++++++++++++
 ++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -334,6 +359,36 @@ figure.slider figure figcaption {
 		background: rgba(0,0,0,0.3);
 		color: #fff; width: 100%;
 		font-size: 2rem; padding: .6rem;
+	}
+
+	#cubos section{
+		margin: 10px auto;
+		height: 300px;
+		width: 80%;
+		padding: 10px;
+		border: solid;
+		border-radius: 10px;
+
+	}
+
+	#cubos section > *{
+		margin-left: 25%;
+	}
+
+	#cubo1{
+		background: url("../media/dudas.jpg") no-repeat scroll 0% 0% / 25% 100%;
+	}
+
+	#cubo2{
+		background: url("../media/reloj.jpg") no-repeat scroll 0% 0% / 25% 100%;
+	}
+
+	#cubo3{
+		background: url("../media/prismaticos.jpg") no-repeat scroll 0% 0% / 25% 100%;
+	}
+
+	#cubo4{
+		background: url("../media/fuerte.jpg") no-repeat scroll 0% 0% / 25% 100%;
 	}
 
 }
