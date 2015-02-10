@@ -51,7 +51,7 @@ header .logo a{
 	height: 200px;
 	width: 200px;
 	margin: 10px auto;
-	padding: 10px;	
+	padding: 10px;
 	border-radius: 10%;
 }
 
@@ -92,7 +92,7 @@ header .logo a{
 	padding: 20px 155px 20px 0px;
 	background-color: #222222;
 	margin: 0;
-	
+
 }
 
 
@@ -279,6 +279,7 @@ div#captioned-gallery {
 }
 
 figure {
+  display: table;
 	margin: 0;
 }
 
@@ -286,16 +287,16 @@ figure.slider {
 	position: relative;
 	width: 500%;
 	font-size: 0;
-	animation: 15s slidy infinite; 
+	animation: 15s slidy infinite;
 	-webkit-animation: 15s slidy infinite;
 
 }
 
-figure.slider figure { 
+figure.slider figure {
 	width: 20%;
 	height: auto;
 	display: inline-block;
-	position: relative; 
+	position: relative;
 }
 
 figure.slider img {
@@ -308,10 +309,12 @@ figure.slider figure figcaption {
 	bottom: 0;
 	background: rgba(0,0,0,0.3);
 	color: #fff; width: 100%;
-	font-size: 2rem; padding: .6rem;
+	font-size: 2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
 }
 
-@media screen and (max-width: 500px) { 
+@media screen and (max-width: 500px) {
 
 	figure.slider figure figcaption {
 		font-size: 1.2rem;
@@ -358,7 +361,7 @@ figure.slider figure figcaption {
 		bottom: 0;
 		background: rgba(0,0,0,0.3);
 		color: #fff; width: 100%;
-		font-size: 2rem; padding: .6rem;
+		font-size: 2rem;
 	}
 
 	#cubos section{
@@ -395,7 +398,7 @@ figure.slider figure figcaption {
 /*FIN MEDIA 800px*/
 
 /*NAV para la version PC*/
-.pc-screen-menu ul{    
+.pc-screen-menu ul{
 	list-style: none;
 	margin: 0;
 	display: flex;
