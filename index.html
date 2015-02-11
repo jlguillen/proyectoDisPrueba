@@ -9,18 +9,27 @@
 	<link rel="stylesheet" href="libs/slidebars.css">
 </head>
 <body>
+	<div id="menu" class="sb-slidebar sb-right sb-style-overlay">
+			<ul class="navigation">
+				<li><a href="www.marca.es">opcion</a></li>
+				<li><a href="">opcion</a></li>
+				<li><a href="">opcion</a></li>
+				<li><a href="">opcion</a></li>
+				<li><a href="">opcion</a></li>
+			</ul>
+	</div>
+
 	<main id="sb-site">
 		<header>
 			<div class="logo">
 				<a href="#" title="ENCADECO : Modernice su negocio">encadeco</a>
 			</div>
 
-			<!--<img src="media/logo.svg" alt="logo-ENCADECO">-->
 			<div id="lines" class="sb-toggle-right btn"></div>
 
-			<div id="menu" class="sb-slidebar sb-right sb-style-overlay">
+			<div class="pc-screen-menu">
 				<ul class="navigation">
-					<li><a href="">opcion</a></li>
+					<li><a href="www.google.es">opcion</a></li>
 					<li><a href="">opcion</a></li>
 					<li><a href="">opcion</a></li>
 					<li><a href="">opcion</a></li>
@@ -114,6 +123,7 @@
 			<iframe width="450" height="200" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Calle+Francisco+Carrión+Mejías,+10,+Sevilla,+España&key=AIzaSyB3gz_E-8s1FS5Wl4JN5Zggxd_JTD_a_hk"></iframe>
 			<p>Puede encontrarnos en C/Francisco Carrión Mejías 10, Sevilla 41003, Sevilla, España.</p>
 		</div>
+
 		<footer>
 			<p>pie de página, botones sociales, tal</p>
 			<ul class="soc">
@@ -135,8 +145,9 @@
 	(function($) {
 		$(document).ready(function() {
 			$.slidebars();
-			verificarWith();
+			//verificarWith();
 		});
+
 	}) (jQuery);
 
 
