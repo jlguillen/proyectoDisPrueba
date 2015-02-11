@@ -518,35 +518,22 @@ footer{
 
 /*Cambio el margin de la caja del menú a la misma proporción que crece */
 
-@media (max-width: 480px) {
-  .pc-screen-menu ul{
-    margin: 0 70% 0 0;
-  }
-
-}
-
-@media (min-width: 481px) {
-  .pc-screen-menu ul{
-    margin: 0 55% 0 0;
-  }
-}
-
 @media (min-width: 768px) {
   .pc-screen-menu ul{
-    margin: 0 40% 0 0;
+    margin: 0 7% 0 0;   
   }
 }
 
 @media (min-width: 992px) {
   .pc-screen-menu ul{
-    margin: 0 30% 0 0;
+    margin: 0 5% 0 0;   
   }
 
 }
 
 @media (min-width: 1200px) {
   .pc-screen-menu ul{
-    margin: 0 20% 0 0;
+    margin: 0 3% 0 0;
   }
-
+  
 }
