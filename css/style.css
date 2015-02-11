@@ -439,7 +439,7 @@ footer{
     bottom: 0;
     background: rgba(0,0,0,0.3);
     color: #fff; width: 100%;
-    font-size: 2rem;
+    font-size: 2rem; padding: .6rem;
   }
 
   /*MAS DE 800px: Cubos*/
@@ -520,13 +520,13 @@ footer{
 
 @media (min-width: 768px) {
   .pc-screen-menu ul{
-    margin: 0 7% 0 0;
+    margin: 0 7% 0 0;   
   }
 }
 
 @media (min-width: 992px) {
   .pc-screen-menu ul{
-    margin: 0 5% 0 0;
+    margin: 0 5% 0 0;   
   }
 
 }
@@ -535,5 +535,5 @@ footer{
   .pc-screen-menu ul{
     margin: 0 3% 0 0;
   }
-
+  
 }
