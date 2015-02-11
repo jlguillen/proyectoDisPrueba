@@ -252,12 +252,13 @@ figure.slider figure figcaption {
 +++++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-div#mapa *{
+div#map_canvas{
   width: 90%;
+  min-height: 150px;
 
 }
 
-div#mapa{
+div#map_canvas{
   margin: auto;
 }
 
@@ -268,7 +269,7 @@ div#mapa{
 
 /*Padding texto, ##############temporal############*/
 
-#central, #mapa{
+#central, #map_canvas{
   padding-left:0 1em;
 }
 
@@ -522,6 +523,13 @@ footer img{
   }
 
 
+  /*MAPA para mas de 800px*/
+
+  div#map_canvas{
+    width: 60%;
+    min-height: 250px;
+  }
+
 
 }
 /*FIN MEDIA 800px*/
@@ -559,13 +567,13 @@ footer img{
 
 @media (min-width: 768px) {
   .pc-screen-menu ul{
-    margin: 0 7% 0 0;   
+    margin: 0 7% 0 0;
   }
 }
 
 @media (min-width: 992px) {
   .pc-screen-menu ul{
-    margin: 0 5% 0 0;   
+    margin: 0 5% 0 0;
   }
 
 }
@@ -585,7 +593,5 @@ footer img{
   }
 
 
-  
+
 }
-
-
