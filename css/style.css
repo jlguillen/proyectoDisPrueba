@@ -39,7 +39,7 @@ header, #main, #cubos, footer, #central{
 /* http://paletton.com */
 
 body, html, main{
-	background-color: #E2FBFB!important; /*El color mas claro de la paleta*/
+  background-color: #E2FBFB!important; /*El color mas claro de la paleta*/
 }
 
 
@@ -48,13 +48,13 @@ main{
 }
 
 #main > *{
-	/*margin: auto; para centrar*/
+  /*margin: auto; para centrar*/
 }
 
 
 #cubos{
-	display: -webkit-flex;
-	-webkit-flex-wrap: wrap;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
 }
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++
@@ -63,65 +63,65 @@ main{
 +++++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++++*/
 header{
-	height: 40px;
-	margin: 10px 10px 10px 10px;
+  height: 40px;
+  margin: 10px 10px 10px 10px;
 }
 
 header .logo{
-	width: 250px;
-	height: 30px;
-	background: url("../media/logo.svg") no-repeat scroll 0% 0% / 100% 100%;
-	float: left;
+  width: 250px;
+  height: 30px;
+  background: url("../media/logo.svg") no-repeat scroll 0% 0% / 100% 100%;
+  float: left;
 }
 
 header .logo a{
-	display: block;
-	height: 30px;
-	text-indent: -34em;
-	overflow: hidden;
+  display: block;
+  height: 30px;
+  text-indent: -34em;
+  overflow: hidden;
 }
 
 /*NAVEGATION*/
 
 /*Oculto el menú de PC*/
 .pc-screen-menu{
-	display: none;
+  display: none;
 }
 
 /*Botón*/
 .btn {
-	display: inline;
-	height: 36px;
-	width: 36px;
-	cursor: pointer;
+  display: inline;
+  height: 36px;
+  width: 36px;
+  cursor: pointer;
 }
 
 #lines:before {
-	border-bottom: 17px double black;
-	border-top: 6px solid black;
-	content:"";
-	height: 5px;
-	position: absolute;
-	right:20px;
-	top: 4px;
-	width:30px;
+  border-bottom: 17px double black;
+  border-top: 6px solid black;
+  content:"";
+  height: 5px;
+  position: absolute;
+  right:20px;
+  top: 4px;
+  width:30px;
 }
 
 /*Opciones*/
 .sb-slidebar{
 }
 .sb-slidebar li{
-	display: block;
-	width: 100%;
-	padding: 20px 0px 20px 0px;
+  display: block;
+  width: 100%;
+  padding: 20px 0px 20px 0px;
 }
 
 .sb-slidebar li a{
-	padding: 20px 155px 20px 0px;
-	background-color: #93C0C0;
-	margin: 0;
-	border-radius: 10px;
-	text-decoration: none;	
+  padding: 20px 155px 20px 0px;
+  background-color: #93C0C0;
+  margin: 0;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++
@@ -130,8 +130,8 @@ header .logo a{
 +++++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++++*/
 #central{
-	width: 90%;
-	margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 @-webkit-keyframes slidy {
@@ -163,36 +163,38 @@ div#captioned-gallery {
 }
 
 figure {
-	margin: 0;
+  margin: 0;
 }
 
 figure.slider {
-	position: relative;
-	width: 500%;
-	font-size: 0;
-	animation: 15s slidy infinite; 
-	-webkit-animation: 15s slidy infinite;
+  position: relative;
+  width: 500%;
+  font-size: 0;
+  animation: 15s slidy infinite;
+  -webkit-animation: 15s slidy infinite;
 
 }
 
-figure.slider figure { 
-	width: 20%;
-	height: auto;
-	display: inline-block;
-	position: relative; 
+figure.slider figure {
+  width: 20%;
+  height: auto;
+  display: inline-block;
+  position: relative;
 }
 
 figure.slider img {
-	width: 100%;
-	height: auto;
+  width: 100%;
+  height: auto;
 }
 
 figure.slider figure figcaption {
-	position: absolute;
-	bottom: 0;
-	background: rgba(0,0,0,0.3);
-	color: #fff; width: 100%;
-	font-size: 1.2rem; padding: .6rem;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+  color: #fff; width: 100%;
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
 }
 
 
@@ -203,31 +205,31 @@ figure.slider figure figcaption {
 +++++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++++*/
 #cubos{
-	width: 90%;
-	margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 #cubos section{
-	height: 200px;
-	width: 200px;
-	margin: 10px auto;
-	padding: 10px;	
-	border-radius: 10%;
+  height: 200px;
+  width: 200px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10%;
 }
 
 #cubo1{
-	background: url("../media/dudas.jpg") no-repeat scroll 0% 0% / 100% 100%;
+  background: url("../media/dudas.jpg") no-repeat scroll 0% 0% / 100% 100%;
 }
 
 #cubo2{
-	background: url("../media/reloj.jpg") no-repeat scroll 0% 0% / 100% 100%;
+  background: url("../media/reloj.jpg") no-repeat scroll 0% 0% / 100% 100%;
 }
 
 #cubo3{
-	background: url("../media/prismaticos.jpg") no-repeat scroll 0% 0% / 100% 100%;
+  background: url("../media/prismaticos.jpg") no-repeat scroll 0% 0% / 100% 100%;
 }
 
 #cubo4{
-	background: url("../media/fuerte.jpg") no-repeat scroll 0% 0% / 100% 100%;
+  background: url("../media/fuerte.jpg") no-repeat scroll 0% 0% / 100% 100%;
 }
 
 #cubos section > *{
@@ -240,12 +242,12 @@ figure.slider figure figcaption {
 +++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 div#mapa *{
-	width: 90%;
+  width: 90%;
 
 }
 
 div#mapa{
-	margin: auto;
+  margin: auto;
 }
 
 
@@ -256,11 +258,11 @@ div#mapa{
 /*Padding texto, ##############temporal############*/
 
 #central, #mapa{
-	padding-left:0 1em;
+  padding-left:0 1em;
 }
 
 iframe{
-	padding-top: 1em;
+  padding-top: 1em;
 }
 
 /**/
@@ -269,7 +271,7 @@ iframe{
 
 /*footer*/
 footer{
-	text-align: center;
+  text-align: center;
 }
 
 @font-face {
@@ -325,14 +327,14 @@ footer{
     color: #ffffff;
     background-color: none;
 
-	width: 30px;
-	height: 30px;
-	line-height: 30px;
-	font-size: 17px;
-	margin-right: 10px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 17px;
+  margin-right: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
 .soc a:hover { z-index: 2; }
 
@@ -405,146 +407,146 @@ footer{
 
 /*Media: MAS de 800px de ancho*/
 @media (min-width: 800px) {
-	/*MAS DE 800px: HEADER*/
-	.pc-screen-menu{
-		display: block;
-	}
+  /*MAS DE 800px: HEADER*/
+  .pc-screen-menu{
+    display: block;
+  }
 
-	.btn {
-		display: none;
-	}
+  .btn {
+    display: none;
+  }
 
-	#lines:before {
-		display: none;
-	}
-	
-	/*MAS DE 800px: Central*/
-	#central{		
-		margin: 0 auto;
-	}
+  #lines:before {
+    display: none;
+  }
 
-	figure.slider figure figcaption {
-		font-size: 2.2rem;
-	}
+  /*MAS DE 800px: Central*/
+  #central{
+    margin: 0 auto;
+  }
 
-	div#captioned-gallery{
-		width: 65%;		
-		margin: 0 auto;
-	}
+  figure.slider figure figcaption {
+    font-size: 2.2rem;
+  }
 
-	figure.slider figure figcaption {
-		position: absolute;
-		bottom: 0;
-		background: rgba(0,0,0,0.3);
-		color: #fff; width: 100%;
-		font-size: 2rem; padding: .6rem;
-	}
-	
-	/*MAS DE 800px: Cubos*/
-	#cubos section{
-		margin: 10px auto;
-		height: 300px;
-		width: 80%;
-		padding: 10px;
-		border: solid;
-		border-radius: 10px;
+  div#captioned-gallery{
+    width: 65%;
+    margin: 0 auto;
+  }
 
-	}
+  figure.slider figure figcaption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+    color: #fff; width: 100%;
+    font-size: 2rem; padding: .6rem;
+  }
 
-	#cubos section > *{
-		margin-left: 25%;
-	}
+  /*MAS DE 800px: Cubos*/
+  #cubos section{
+    margin: 10px auto;
+    height: 300px;
+    width: 80%;
+    padding: 10px;
+    border: solid;
+    border-radius: 10px;
 
-	#cubo1{
-		background: url("../media/dudas.jpg") no-repeat scroll 0% 0% / 25% 100%;
-	}
+  }
 
-	#cubo2{
-		background: url("../media/reloj.jpg") no-repeat scroll 0% 0% / 25% 100%;
-	}
+  #cubos section > *{
+    margin-left: 25%;
+  }
 
-	#cubo3{
-		background: url("../media/prismaticos.jpg") no-repeat scroll 0% 0% / 25% 100%;
-	}
+  #cubo1{
+    background: url("../media/dudas.jpg") no-repeat scroll 0% 0% / 25% 100%;
+  }
 
-	#cubo4{
-		background: url("../media/fuerte.jpg") no-repeat scroll 0% 0% / 25% 100%;
-	}
+  #cubo2{
+    background: url("../media/reloj.jpg") no-repeat scroll 0% 0% / 25% 100%;
+  }
 
-	/*MAS DE 800px: Botones sociales*/
-	.soc li a {
-		width: 50px;
-		height: 50px;
-		line-height: 50px;
-		font-size: 27px;
-		-webkit-border-radius: 18px;
-		-moz-border-radius: 18px;
-		border-radius: 18px;
-	}
+  #cubo3{
+    background: url("../media/prismaticos.jpg") no-repeat scroll 0% 0% / 25% 100%;
+  }
+
+  #cubo4{
+    background: url("../media/fuerte.jpg") no-repeat scroll 0% 0% / 25% 100%;
+  }
+
+  /*MAS DE 800px: Botones sociales*/
+  .soc li a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 27px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    border-radius: 18px;
+  }
 
 }
 /*FIN MEDIA 800px*/
 
 /*NAV para la version PC*/
 .pc-screen-menu ul{
-	list-style: none;
-	margin: 0 20% 0 0;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-flow: row wrap;
-	justify-content: flex-end;
+  list-style: none;
+  margin: 0 20% 0 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
 
 }
 
 .pc-scree-menu li{
-	flex-flow: row;
-	-webkit-flex-flow: row;
+  flex-flow: row;
+  -webkit-flex-flow: row;
 }
 .pc-screen-menu ul a {
-	text-decoration: none;
-	display: block;
-	padding: 0.5em 1em 0.5em 1em;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em 1em 0.5em 1em;
 }
 
 .pc-screen-menu ul a:hover {
-	background: #00b7f5;
+  background: #00b7f5;
 }
 
 
 /*Cambio el margin de la caja del menú a la misma proporción que crece */
 
 @media (max-width: 480px) {
-	.pc-screen-menu ul{
-		margin: 0 70% 0 0;		
-	}
+  .pc-screen-menu ul{
+    margin: 0 70% 0 0;
+  }
 
 }
 
 @media (min-width: 481px) {
-	.pc-screen-menu ul{
-		margin: 0 55% 0 0;		
-	}
+  .pc-screen-menu ul{
+    margin: 0 55% 0 0;
+  }
 }
 
 @media (min-width: 768px) {
-	.pc-screen-menu ul{
-		margin: 0 40% 0 0;		
-	}
+  .pc-screen-menu ul{
+    margin: 0 40% 0 0;
+  }
 }
 
 @media (min-width: 992px) {
-	.pc-screen-menu ul{
-		margin: 0 30% 0 0;		
-	}
+  .pc-screen-menu ul{
+    margin: 0 30% 0 0;
+  }
 
 }
 
 @media (min-width: 1200px) {
-	.pc-screen-menu ul{
-		margin: 0 20% 0 0;
-	}
-	
+  .pc-screen-menu ul{
+    margin: 0 20% 0 0;
+  }
+
 }
