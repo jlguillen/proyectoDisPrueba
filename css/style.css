@@ -164,6 +164,10 @@ header .logo a{
 
 div#captioned-gallery {
     overflow: hidden;
+    box-shadow: 0 0 5px #ccc;
+    border: solid #fff 5px;
+    left: -5px;
+    background: #fff;
 }
 
 figure {
