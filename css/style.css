@@ -1,4 +1,4 @@
-header, #main, #cubos, footer, #central{
+header, #main, #cubos, #central{
     border-bottom: solid;
 }
 
@@ -17,7 +17,7 @@ header, #main, #cubos, footer, #central{
 
 /* As hex codes */
 
-.color-primary-0 { color: #6BA3A3 }	/* Main Primary color */
+.color-primary-0 { color: #6BA3A3 } /* Main Primary color */
 .color-primary-1 { color: #BCD9D9 }
 .color-primary-2 { color: #93C0C0 }
 .color-primary-3 { color: #4D8E8E }
@@ -27,7 +27,7 @@ header, #main, #cubos, footer, #central{
 
 /* As RGBa codes */
 
-.rgba-primary-0 { color: rgba(107,163,163,1) }	/* Main Primary color */
+.rgba-primary-0 { color: rgba(107,163,163,1) }  /* Main Primary color */
 .rgba-primary-1 { color: rgba(188,217,217,1) }
 .rgba-primary-2 { color: rgba(147,192,192,1) }
 .rgba-primary-3 { color: rgba( 77,142,142,1) }
@@ -124,6 +124,10 @@ header .logo a{
   text-decoration: none;
 }
 
+/*------------------------------------------------
+--------------------------------------------------
+-------------------FIN HEADER-------------------*/
+
 /*+++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++++++
 ++++++++++++++++ESTILO PARA CENTRAL++++++++++++++++
@@ -197,6 +201,9 @@ figure.slider figure figcaption {
   text-align: center;
 }
 
+/*------------------------------------------------
+--------------------------------------------------
+-------------------FIN CENTRAL------------------*/
 
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++
@@ -235,6 +242,10 @@ figure.slider figure figcaption {
 #cubos section > *{
 }
 
+/*------------------------------------------------
+--------------------------------------------------
+-------------------FIN CUBOS--------------------*/
+
 /*+++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++ESTILO PARA MAPA++++++++++++++++++
@@ -268,12 +279,39 @@ iframe{
 /**/
 
 
+/*+++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++ESTILO PARA FOOTER+++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-/*footer*/
 footer{
   text-align: center;
+  margin-bottom: 30px;
 }
 
+footer #privacidad{
+  text-decoration: none;
+  color: black;
+}
+
+footer #privacidad:hover{
+  text-decoration: underline;
+  color: gray;
+}
+
+footer span{
+  color: gray;
+  font-size: 0.9em;
+}
+
+footer img{
+  display: block;
+  margin: 0 auto;
+}
+
+
+/*SOCIAL BUTTONS*/
 @font-face {
     font-family: 'si';
     src: url('../fonts/socicon.eot');
@@ -389,12 +427,11 @@ footer{
 .soc-linkedin:hover {
     background-color: #4785cb;
 }
+/*FIN SOCIAL BUTTONS*/
 
-
-
-
-
-
+/*------------------------------------------------
+--------------------------------------------------
+-------------------FIN FOOTER-------------------*/
 
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++
@@ -454,23 +491,23 @@ footer{
   }
 
   #cubos section > *{
-    margin-left: 25%;
+    margin-left: 30%;
   }
 
   #cubo1{
-    background: url("../media/dudas.jpg") no-repeat scroll 0% 0% / 25% 100%;
+    background: url("../media/dudas.jpg") no-repeat scroll 0% 0% / 30% 100%;
   }
 
   #cubo2{
-    background: url("../media/reloj.jpg") no-repeat scroll 0% 0% / 25% 100%;
+    background: url("../media/reloj.jpg") no-repeat scroll 0% 0% / 30% 100%;
   }
 
   #cubo3{
-    background: url("../media/prismaticos.jpg") no-repeat scroll 0% 0% / 25% 100%;
+    background: url("../media/prismaticos.jpg") no-repeat scroll 0% 0% / 30% 100%;
   }
 
   #cubo4{
-    background: url("../media/fuerte.jpg") no-repeat scroll 0% 0% / 25% 100%;
+    background: url("../media/fuerte.jpg") no-repeat scroll 0% 0% / 30% 100%;
   }
 
   /*MAS DE 800px: Botones sociales*/
@@ -483,6 +520,8 @@ footer{
     -moz-border-radius: 18px;
     border-radius: 18px;
   }
+
+
 
 }
 /*FIN MEDIA 800px*/
@@ -520,13 +559,13 @@ footer{
 
 @media (min-width: 768px) {
   .pc-screen-menu ul{
-    margin: 0 7% 0 0;
+    margin: 0 7% 0 0;   
   }
 }
 
 @media (min-width: 992px) {
   .pc-screen-menu ul{
-    margin: 0 5% 0 0;
+    margin: 0 5% 0 0;   
   }
 
 }
@@ -535,5 +574,18 @@ footer{
   .pc-screen-menu ul{
     margin: 0 3% 0 0;
   }
+    main{
+    width: 90%!important;
+    margin: 0 auto!important;
+  }
 
+  footer img{
+    display: inline;
+    float: right;
+  }
+
+
+  
 }
+
+
