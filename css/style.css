@@ -296,6 +296,102 @@ iframe{
 
 /**/
 
+/*+++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++ESTILO PARA FORM++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++*/
+#contacto{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column;
+  -webkit-flex-flow: column;
+}
+
+#mensaje{
+  width: 90%;
+  margin: 0 auto;
+}
+
+#mensaje form > *{
+  margin: 10px;
+  display: block;
+  width: 90%;
+
+}
+
+#datos{
+  width: 90%;
+  margin: 0 auto;
+}
+
+#datos ul{
+  list-style: none; 
+}
+
+#datos ul li img{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#datos ul li a{
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+
+#datos ul li{
+  margin: 10px auto;
+}
+
+.titForm{
+  text-align: center;
+  font-size: 1.7em;
+  color: #6E6E6E;
+}
+
+#mensaje form label{
+  color: #848484;
+}
+
+#botonInput{
+  border-radius: 20px;
+  padding: 20px;
+  background-color: rgba(107,163,163,.5);
+}
+
+@media (min-width: 800px) {
+  #contacto{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row;
+    -webkit-flex-flow: row;
+  }
+
+  #mensaje{
+    display: inline-block;
+  }
+
+  #datos{
+    display: inline-block;
+  }
+
+
+}
+
+
+
+/*------------------------------------------------
+--------------------------------------------------
+-------------------FIN FORM--------------------*/
+
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++++++
