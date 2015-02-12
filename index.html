@@ -7,6 +7,7 @@
 	<link href="css/style.css" rel="stylesheet">
 	<script src="js/modernizr.custom.04200.js"></script>
 	<link rel="stylesheet" href="libs/slidebars.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
 </head>
 <body>
 	<div id="menu" class="sb-slidebar sb-right sb-style-overlay">
@@ -180,11 +181,17 @@
 
 		<!-- Slidebars -->
 		<script src="libs/slidebars.js"></script>
+		<!--ViewportChecker-->
+		<script src="libs/viewportchecker.js"></script>
 		<script>
 		(function($) {
 			$(document).ready(function() {
 				$.slidebars();
 				//verificarWith();
+				$('#cubos section').addClass("hidden").viewportChecker({
+						classToAdd: 'visible animated bounceInUp', // Class to add to the elements when they are visible
+						offset: 100
+				});
 			});
 
 		}) (jQuery);
