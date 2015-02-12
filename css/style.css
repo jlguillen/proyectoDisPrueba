@@ -254,6 +254,27 @@ figure.slider figure figcaption {
   background: url("../media/fuerte.jpg") no-repeat scroll 0% 0% / 100% 100%;
 }
 
+#cubos section article h4{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba( 77,142,142,0.3)
+}
+
+#cubos section article .resumen{
+  margin-top: 80%;
+  margin-bottom: 0;
+}
+
+#cubos section article button{
+  background: transparent;
+  border: none;
+  text-decoration: underline;
+  color: blue;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
 
 
 /*Efectos para detalle*/
@@ -628,6 +649,13 @@ footer img{
   }
 
   /*MAS DE 800px: Cubos*/
+  #cubos section article .resumen{
+    margin: 0;
+  } 
+
+  #cubos section article h4{
+    background-color: transparent;
+  }
   #cubos section{
     height: 300px;
   }
@@ -675,6 +703,7 @@ footer img{
   #cubos section .detalle{
     margin: 0 0 0 30%;
     width: 70%;
+    padding: 20px 5px;
   }
 
 
