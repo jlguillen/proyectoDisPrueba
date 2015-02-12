@@ -248,7 +248,8 @@ figure.slider figure figcaption {
   background: url("../media/fuerte.jpg") no-repeat scroll 0% 0% / 100% 100%;
 }
 
-#cubos section > *{
+#cubos section{
+  height: 300px;
 }
 
 /*Efectos para detalle*/
@@ -623,12 +624,10 @@ footer img{
   /*MAS DE 800px: Cubos*/
   #cubos section{
     margin: 10px auto;
-    height: 300px;
     width: 80%;
     padding: 10px;
     border: solid;
     border-radius: 10px;
-
   }
 
   #cubos section > *{
@@ -651,8 +650,9 @@ footer img{
     background: url("../media/fuerte.jpg") no-repeat scroll 0% 0% / 30% 100%;
   }
 
-  #cubos article{
+  #cubos section article{
     background: none;
+    height: 80px;
   }
 
   #cubos button{
@@ -662,6 +662,12 @@ footer img{
   .detalle{
     max-height: none;
   }
+
+  #cubos section .detalle{
+    margin: 0 0 0 30%;
+    width: 70%;
+  }
+
 
   /*MAS DE 800px: Botones sociales*/
   .soc li a {
