@@ -1,8 +1,9 @@
 function initialize(){
 
-
+  var latitud = 37.3974953;
+  var longitud = -5.978495400000001;
    //Load Google Map
-   var latlng = new google.maps.LatLng(37.39176052, -5.988072799999999);
+   var latlng = new google.maps.LatLng(latitud, longitud);
    var myOptions = {
      zoom: 15,
      center: latlng,
@@ -11,13 +12,10 @@ function initialize(){
 
    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
-   var punto = new google.maps.LatLng(37.39176052, -5.988072799999999);
-
-
    var infowindow = new google.maps.InfoWindow({
        map: map,
-       position: punto,
-       content: 'ENCADECO  C/Francisco Carrión Mejías 10, Sevilla 41003, Sevilla'
+       position: latlng,
+       content: 'ENCADECO Inc. C/Jabugo 4, Sevilla 41008, Sevilla'
      });
  }
 
