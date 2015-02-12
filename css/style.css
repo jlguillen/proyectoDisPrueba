@@ -51,12 +51,6 @@ main{
   /*margin: auto; para centrar*/
 }
 
-
-#cubos{
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
-}
-
 /*+++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++++++
 ++++++++++++++++ESTILO PARA HEADER+++++++++++++++++
@@ -219,27 +213,38 @@ figure.slider figure figcaption {
   width: 90%;
   margin: 0 auto;
 }
-#cubos section{
-  height: 200px;
-  width: 200px;
-  margin: 10px auto;
-  padding: 10px;
-  border-radius: 10%;
+
+#cubos *{
+  margin: 20px auto;
+  border-radius: 10px;
 }
 
-#cubo1{
+#cubos section .detalle{
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba( 52,124,124,.2);
+}
+
+#cubos section article{
+  width: 80%;
+  height: 300px;
+
+}
+
+#cubo1 article{
   background: url("../media/dudas.jpg") no-repeat scroll 0% 0% / 100% 100%;
 }
 
-#cubo2{
+#cubo2 article{
   background: url("../media/reloj.jpg") no-repeat scroll 0% 0% / 100% 100%;
 }
 
-#cubo3{
+#cubo3 article{
   background: url("../media/prismaticos.jpg") no-repeat scroll 0% 0% / 100% 100%;
 }
 
-#cubo4{
+#cubo4 article{
   background: url("../media/fuerte.jpg") no-repeat scroll 0% 0% / 100% 100%;
 }
 
@@ -599,3 +604,29 @@ footer img{
 
 
 }
+
+  .detalle.opened {
+    max-height: 400px;
+    height: 400px;
+    width: 200px;
+  }
+
+  .detalle {
+    max-height: 0;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+
+    -moz-transition-property: all;
+    -moz-transition-duration: 1s;
+    -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+
+    -ms-transition-property: all;
+    -ms-transition-duration: 1s;
+    -ms-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    overflow-y: hidden;
+  }
