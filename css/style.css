@@ -78,8 +78,7 @@ header .logo a{
 /*NAVEGATION*/
 
 /*Oculto el menú de PC*/
-.pc-screen-menu{
-
+.pc-screen-menu{  
   display: none;
 }
 
@@ -106,21 +105,18 @@ header .logo a{
 .sb-slidebar{
 }
 .sb-slidebar li{
-  display: inline-block;
-  padding: 15px 0 15px 0;
-  margin-top: 10px;
-  width: 90%;
+  display: block;
+  width: 100%;
+  padding: 20px 0px 20px 0px;
 }
 
 .sb-slidebar li a{
-  width: 90%;
-  display: inline-block;
-  padding: 10px 10px;
+  padding: 20px 155px 20px 0px;
   background-color: #93C0C0;
+  margin: 0;
   border-radius: 10px;
   text-decoration: none;
 }
-
 
 /*------------------------------------------------
 --------------------------------------------------
@@ -228,12 +224,12 @@ figure.slider figure figcaption {
   width: 80%;
   margin: 0 auto;
   background-color: rgba( 52,124,124,.2);
+
 }
 
 #cubos section article{
   width: 80%;
   height: 300px;
-
 }
 
 #cubo1 article{
@@ -252,9 +248,7 @@ figure.slider figure figcaption {
   background: url("../media/fuerte.jpg") no-repeat scroll 0% 0% / 100% 100%;
 }
 
-#cubos section{
-  height: 300px;
-}
+
 
 /*Efectos para detalle*/
 .detalle.opened {
@@ -591,11 +585,8 @@ footer img{
 /*Media: MAS de 800px de ancho*/
 @media (min-width: 800px) {
   /*MAS DE 800px: HEADER*/
-  header{
-    height: 80px;
-  }
   .pc-screen-menu{
-    display: inline-block;
+    display: block;
   }
 
   .btn {
@@ -629,6 +620,9 @@ footer img{
   }
 
   /*MAS DE 800px: Cubos*/
+  #cubos section{
+    height: 300px;
+  }
   #cubos section{
     margin: 10px auto;
     width: 80%;
@@ -701,7 +695,6 @@ footer img{
 
 /*NAV para la version PC*/
 .pc-screen-menu ul{
-  display: block;
   list-style: none;
   margin: 0 20% 0 0;
   display: -webkit-box;
@@ -711,13 +704,13 @@ footer img{
   display: flex;
   -webkit-flex-flow: row wrap;
   justify-content: flex-end;
+
 }
 
 .pc-scree-menu li{
   flex-flow: row;
   -webkit-flex-flow: row;
 }
-
 .pc-screen-menu ul a {
   text-decoration: none;
   display: block;
@@ -733,20 +726,20 @@ footer img{
 
 @media (min-width: 768px) {
   .pc-screen-menu ul{
-    margin: 0;
+    margin: 0 7% 0 0;
   }
 }
 
 @media (min-width: 992px) {
   .pc-screen-menu ul{
-    margin: 0;
+    margin: 0 5% 0 0;
   }
 
 }
 
 @media (min-width: 1200px) {
   .pc-screen-menu ul{
-    margin: 0;
+    margin: 0 3% 0 0;
   }
     main{
     width: 90%!important;
