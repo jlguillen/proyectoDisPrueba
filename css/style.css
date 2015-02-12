@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'MyriadProRegular';
-  src: url('fonts/MyriadProRegular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  src: url('../fonts/MyriadProRegular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 
 /*--------------------------------------------
@@ -651,7 +651,7 @@ footer img{
   /*MAS DE 800px: Cubos*/
   #cubos section article .resumen{
     margin: 0;
-  } 
+  }
 
   #cubos section article h4{
     background-color: transparent;
