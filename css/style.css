@@ -250,6 +250,34 @@ figure.slider figure figcaption {
 
 #cubos section > *{
 }
+
+/*Efectos para detalle*/
+.detalle.opened {
+  max-height: 400px;
+  height: 400px;
+  width: 200px;
+}
+
+.detalle {
+  max-height: 0;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 1s;
+  -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+
+  -moz-transition-property: all;
+  -moz-transition-duration: 1s;
+  -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+
+  -ms-transition-property: all;
+  -ms-transition-duration: 1s;
+  -ms-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  overflow-y: hidden;
+}
+
 /*Reglas para usar los efectos haciendo scroll*/
 .hidden{
   opacity: 0;
@@ -329,7 +357,7 @@ iframe{
 }
 
 #datos ul{
-  list-style: none; 
+  list-style: none;
 }
 
 #datos ul li img{
@@ -391,7 +419,6 @@ iframe{
 /*------------------------------------------------
 --------------------------------------------------
 -------------------FIN FORM--------------------*/
-
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -624,6 +651,18 @@ footer img{
     background: url("../media/fuerte.jpg") no-repeat scroll 0% 0% / 30% 100%;
   }
 
+  #cubos article{
+    background: none;
+  }
+
+  #cubos button{
+    visibility: hidden;
+  }
+
+  .detalle{
+    max-height: none;
+  }
+
   /*MAS DE 800px: Botones sociales*/
   .soc li a {
     width: 50px;
@@ -708,29 +747,3 @@ footer img{
 
 
 }
-
-  .detalle.opened {
-    max-height: 400px;
-    height: 400px;
-    width: 200px;
-  }
-
-  .detalle {
-    max-height: 0;
-    -webkit-transition-property: all;
-    -webkit-transition-duration: 1s;
-    -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-
-    -moz-transition-property: all;
-    -moz-transition-duration: 1s;
-    -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-
-    -ms-transition-property: all;
-    -ms-transition-duration: 1s;
-    -ms-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-    overflow-y: hidden;
-  }
