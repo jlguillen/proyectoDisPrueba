@@ -103,6 +103,8 @@ header .logo a{
 }
 
 /*Opciones*/
+.sb-slidebar{
+}
 .sb-slidebar li{
   display: inline-block;
   padding: 15px 0 15px 0;
@@ -699,6 +701,7 @@ footer img{
 
 /*NAV para la version PC*/
 .pc-screen-menu ul{
+  display: block;
   list-style: none;
   margin: 0 20% 0 0;
   display: -webkit-box;
@@ -708,13 +711,13 @@ footer img{
   display: flex;
   -webkit-flex-flow: row wrap;
   justify-content: flex-end;
-
 }
 
 .pc-scree-menu li{
   flex-flow: row;
   -webkit-flex-flow: row;
 }
+
 .pc-screen-menu ul a {
   text-decoration: none;
   display: block;
@@ -730,20 +733,20 @@ footer img{
 
 @media (min-width: 768px) {
   .pc-screen-menu ul{
-    margin: 0 7% 0 0;
+    margin: 0;
   }
 }
 
 @media (min-width: 992px) {
   .pc-screen-menu ul{
-    margin: 0 5% 0 0;
+    margin: 0;
   }
 
 }
 
 @media (min-width: 1200px) {
   .pc-screen-menu ul{
-    margin: 0 3% 0 0;
+    margin: 0;
   }
     main{
     width: 90%!important;
