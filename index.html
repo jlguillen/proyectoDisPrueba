@@ -12,11 +12,11 @@
 <body>
 	<div id="menu" class="sb-slidebar sb-right sb-style-overlay">
 		<ul class="navigation">
-			<li><a href="www.marca.es">opcion</a></li>
-			<li><a href="">opcion</a></li>
-			<li><a href="">opcion</a></li>
-			<li><a href="">opcion</a></li>
-			<li><a href="">opcion</a></li>
+			<li><a href="#cubo1">¿Qué es ENCADECO?</a></li>
+			<li><a href="#cubo2">¿Cómo funcionamos?</a></li>
+			<li><a href="#cubo3">¿Qué le aportamos?</a></li>
+			<li><a href="#cubo4">¿Cómo abrir su tienda?</a></li>
+			<li><a href="#address">Contáctenos</a></li>
 		</ul>
 	</div>
 
@@ -30,11 +30,11 @@
 
 			<div class="pc-screen-menu">
 				<ul class="navigation">
-					<li><a href="www.google.es">opcion</a></li>
-					<li><a href="">opcion</a></li>
-					<li><a href="">opcion</a></li>
-					<li><a href="">opcion</a></li>
-					<li><a href="">opcion</a></li>
+					<li><a href="#cubo1">¿Qué es ENCADECO?</a></li>
+					<li><a href="#cubo2">¿Cómo funcionamos?</a></li>
+					<li><a href="#cubo3">¿Qué le aportamos?</a></li>
+					<li><a href="#cubo4">¿Cómo abrir su tienda?</a></li>
+					<li><a href="#address">Contáctenos</a></li>
 				</ul>
 			</div>
 		</header>
@@ -81,13 +81,11 @@
 
 	  <section id="cubo1">
 	    <article>
-	      <h4>¿Cómo funcionamos?</h4>
-	      <div class="resumen">Dotamos de know how y apoyo</div>
+	      <h4>¿Qué es ENCADECO?</h4>
+	      <div class="resumen">ENCADECO es una consultora de e-commerce.</div>
 	      <button onclick="document.getElementById('detalle1').classList.toggle('opened');">Toggle slider</button>
 	    </article>
-	    <div class="detalle" id="detalle1">Le facilitaremos las herramientas adecuadas y el apoyo necesario para abrir su propia tienda, manteniendo su imagen, marca y condiciones.
-	      Ponemos a su disposición a un consultor especializado en eCommerce que le acompañará en todo el proceso de creación de la tienda hasta la optimización y maximización de sus ventas en el día a día.
-	      Introducimos su negocio en las diversas plataformas de venta online existentes y por venir sin que usted tenga que hacer nada.
+	    <div class="detalle" id="detalle1">Nuestro objetivo es generar valor adicional para su negocio apoyándole en la diversificación sostenible de sus ingresos en base a un modelo win-win y facilitándole el acceso a las herramientas y conocimientos adecuados.
 	    </div>
 	  </section>
 
@@ -156,7 +154,7 @@
 		<script type="text/javascript" src="js/mapa.js"></script>
 		<div id="address">
 			<div id="map_canvas"></div>
-			<p>Puede encontrarnos en C/Francisco Carrión Mejías 10, Sevilla 41003, Sevilla, España.</p>
+			<!--<p>Puede encontrarnos en C/Francisco Carrión Mejías 10, Sevilla 41003, Sevilla, España.</p>-->
 		</div>
 				<!--<iframe width="450" height="200" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Calle+Francisco+Carrión+Mejías,+10,+Sevilla,+España&key=AIzaSyB3gz_E-8s1FS5Wl4JN5Zggxd_JTD_a_hk"></iframe>-->
 		<div id="contacto">
@@ -174,9 +172,9 @@
 			</div>
 
 			<div id="datos">
-				
+
 				<h1 class="titForm">Información de contacto</h1>
-				
+
 				<ul class="">
 
 					<li class="">
@@ -233,6 +231,9 @@
 				$('#cubos section').addClass("hidden").viewportChecker({
 						classToAdd: 'visible animated bounceInUp', // Class to add to the elements when they are visible
 						offset: 100
+				});
+				$('#botonInput').click(function(){
+					return false;
 				});
 			});
 
