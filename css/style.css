@@ -250,6 +250,14 @@ figure.slider figure figcaption {
 
 #cubos section > *{
 }
+/*Reglas para usar los efectos haciendo scroll*/
+.hidden{
+  opacity: 0;
+}
+
+.visible{
+  opacity: 1;
+}
 
 /*------------------------------------------------
 --------------------------------------------------
