@@ -22,8 +22,8 @@
 
 	<main id="sb-site">
 		<header>
-			<div class="logo">
-				<a href="#menu" title="ENCADECO : Modernice su negocio">encadeco</a>
+			<div class="logo" id="home">
+				<a href="#home" title="ENCADECO : Modernice su negocio">encadeco</a>
 			</div>
 
 			<div id="lines" class="sb-toggle-right btn"></div>
@@ -74,7 +74,7 @@
 	  <section id="cubo1">
 	    <article>
 	      <h4>¿Qué es ENCADECO?</h4>
-	      <div class="resumen">ENCADECO es una consultora de e-commerce.</div>
+	      <div class="resumen">ENCADECO es e-commerce.</div>
 	      <button onclick="document.getElementById('detalle1').classList.toggle('opened');">Leer más...</button>
 	    </article>
 	    <div class="detalle" id="detalle1"><p>Nuestro objetivo es generar valor adicional para su negocio apoyándole en la diversificación sostenible de sus ingresos en base a un modelo win-win y
@@ -84,7 +84,7 @@
 	  <section id="cubo2">
 	    <article>
 	      <h4>¿Cómo funcionamos?</h4>
-	      <div class="resumen">Dotamos de know how y apoyo</div>
+	      <div class="resumen">Dotamos de know how</div>
 	      <button onclick="document.getElementById('detalle2').classList.toggle('opened');">Leer más...</button>
 	    </article>
 	    <div class="detalle" id="detalle2"><p>Facilitamos las herramientas y el apoyo necesario para abrir su tienda, manteniendo imagen, marca y condiciones.
@@ -172,6 +172,7 @@
 				<span>Copyright © 2015 ENCADECO, Inc. Reservados todos los derechos.</span>
 				<img src="media/logoConfianza.gif">
 			</footer>
+			<a id="arriba" href="#home" class="go-top">&#9650</a>
 	</main>
 
 		<!-- jQuery -->
@@ -186,7 +187,7 @@
 			$(document).ready(function() {
 				$.slidebars();
 				$('#cubos section').addClass("hidden").viewportChecker({
-						classToAdd: 'visible animated bounceInUp', // Class to add to the elements when they are visible
+						classToAdd: 'visible animated bounceInUp', // Clase a añadir cuando haciendo scroll pasa a ser visible
 						offset: 100
 				});
 				$('#botonInput').click(function(){
@@ -195,6 +196,22 @@
 			});
 
 		}) (jQuery);
+		/*Clase a añadir al botón de vuelta al inicio cuando se hace scroll*/
+		$(window).scroll(function(event){
+				var scroll = $(window).scrollTop();
+				if (scroll >= 50) {
+						$(".go-top").addClass("show");
+				} else {
+						$(".go-top").removeClass("show");
+				}
+		});
+		/*Animación para el ancla*/
+		$('#arriba').click(function(){
+				$('html, body').animate({
+						scrollTop: $( $(this).attr('href') ).offset().top
+				}, 1000);
+		});
+
 </script>
 
 </body>
